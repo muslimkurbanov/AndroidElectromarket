@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Электромаркет</string>
+
+    <string name="text_welcome_main_act">Добро пожаловать</string>
+    <string name="text_email_main_act">Почта:</string>
+    <string name="text_password_main_act">Пароль:</string>
+    <string name="text_hint_email_edit_text">Введите логин</string>
+    <string name="text_hint_password_edit_text">Введите пароль</string>
+    <string name="button_login_text">Войти</string>
+    <string name="registration_button_main">Регистрация</string>
+
+
+    <string name="text_user_name">Имя:</string>
+    <string name="text_user_second_name">Фамилия:</string>
+    <string name="text_user_number">Номер телефона:</string>
+    <string name="text_hint_user_name">Имя</string>
+    <string name="text_hint_user_second_name">Фамилия</string>
+    <string name="text_hint_user_number">Номер телефона</string>
+    <string name="text_for_btn_reg">Зарегистрироваться</string>
+
+
+    <string name="text_for_test_act">Список тестов</string>
+    <string name="title_test_list_bar">Список тестов</string>
+    <string name="title_profile_bar">Профиль</string>
+
+    <string name="text_instruction">Инструкция</string>
+
+</resources>

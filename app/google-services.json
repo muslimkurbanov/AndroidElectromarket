@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1053386483360",
+    "firebase_url": "https://electromarket-e46b4-default-rtdb.firebaseio.com",
+    "project_id": "electromarket-e46b4",
+    "storage_bucket": "electromarket-e46b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053386483360:android:a74c7d9a3ee0b92577cbc5",
+        "android_client_info": {
+          "package_name": "com.example.firebaseauthexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053386483360-lihha19roifkrcrq72darklio98b456m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXtzG2H8aGsWy78Ahji5Qhg2QX2F-0Le0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053386483360-lihha19roifkrcrq72darklio98b456m.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1053386483360-d7h096kbtos6k1p5e4jna6qalgj0lbnh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.muslim.Electromarket"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

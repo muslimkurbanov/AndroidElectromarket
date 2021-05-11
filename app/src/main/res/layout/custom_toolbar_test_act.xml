@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCustomTestAct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_for_toolbar" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageForToolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/toolbar_image_main" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iconHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/ic_help"
+        android:layout_marginEnd="14dp"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="14dp"
+        android:background="#00FFFFFF"
+        android:text="Выйти"
+        android:visibility="invisible"
+        app:backgroundTint="#00FFFFFF"
+        app:iconTint="#00FFFFFF" />
+
+</RelativeLayout>
