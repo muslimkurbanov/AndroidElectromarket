@@ -13,6 +13,7 @@ class TestActivity : AppCompatActivity() {
     private val testFragment = TestFragment()
     private val profileFragment = ProfileFragment()
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_test)

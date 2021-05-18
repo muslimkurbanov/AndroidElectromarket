@@ -1,21 +1,13 @@
 package screen.learninfo
 
 import android.content.Intent
-import android.media.MediaPlayer
-import android.media.MediaPlayer.OnCompletionListener
-import android.media.MediaPlayer.OnPreparedListener
-import android.net.Uri
 import android.os.Bundle
-import android.widget.MediaController
-import android.widget.Toast
-import android.widget.VideoView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.firebaseauthexample.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_learn_info.*
 import screen.quiz.QuizActivity
-import screen.registration.ui.RegistrationActivity
 
 
 class LearnInfoActivity : AppCompatActivity() {
@@ -31,8 +23,6 @@ class LearnInfoActivity : AppCompatActivity() {
         const val TEST_CHILD_NAME: String = "test_child_name"
     }
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         setContentView(R.layout.activity_learn_info)
         super.onCreate(savedInstanceState)
@@ -46,10 +36,12 @@ class LearnInfoActivity : AppCompatActivity() {
             .child(a.toString())
         getVideoUrlFromFB()
 
-        button2.setOnClickListener {
+        button1.setOnClickListener {
             val childName = intent.getStringExtra(TEST_CHILD_NAME)
+            val testChild = intent.getStringExtra(CHILD_NAME)
             val intentNice = Intent(this, QuizActivity::class.java)
             intentNice.putExtra(QuizActivity.TEST_NAME, childName)
+            intentNice.putExtra(QuizActivity.TEST_CHILD, testChild)
             startActivity(intentNice)
         }
     }
