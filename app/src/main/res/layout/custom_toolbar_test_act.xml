@@ -13,17 +13,14 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imageForToolbar"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_gravity="center"
-        android:layout_marginStart="54dp"
-        android:layout_marginEnd="54dp"
-        android:layout_marginRight="54dp"
-        android:layout_marginLeft="54dp"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/toolbar_image_main" />
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/toolbar_image_main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iconHelp"

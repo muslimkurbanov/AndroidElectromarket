@@ -54,7 +54,9 @@
                     android:inputType="textCapSentences"
                     android:paddingLeft="12dp"
                     android:singleLine="true"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body2" android:textColor="@color/black" android:textSize="20dp"/>
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
 
                 <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/inputSernameEditTextRegistrationAct"
