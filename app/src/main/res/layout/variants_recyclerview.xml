@@ -8,6 +8,13 @@
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        app:fontFamily="@font/din_font"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/black"
+        android:paddingLeft="20dp"
+
+    />
 
 </LinearLayout>

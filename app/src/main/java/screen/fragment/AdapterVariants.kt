@@ -28,14 +28,14 @@ class AdapterVariants: RecyclerView.Adapter<AdapterVariants.ViewHolder>() {
     )
 
     override fun getItemCount() =  variants.size
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) = holder.bind(variants[position].toString())
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) = holder.bind(variants[position].toString(), position + 1)
 
     class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
 
         private val variantsTitle = itemView.findViewById<AppCompatTextView>(R.id.title)
 
-        fun bind(title: String) {
-            variantsTitle.text = title
+        fun bind(title: String, position: Int) {
+            variantsTitle.text = "Тест $position: " + title
         }
     }
 }

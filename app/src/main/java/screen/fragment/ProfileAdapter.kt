@@ -59,7 +59,7 @@ class ProfileAdapter(
         fun bind(title: String) {
 
 
-            tvTitle.text = title + " " + test[title].orEmpty().last()
+            tvTitle.text = title + ": " + test[title].orEmpty().last()
 
             adapterVariants.setVariants(test[title].orEmpty())
 
