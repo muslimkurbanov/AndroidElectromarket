@@ -8,10 +8,14 @@
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/title"
         android:textSize="24sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/black"
+        android:paddingLeft="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:paddingBottom="8dp"/>
+        android:layout_marginTop="12dp"
+        app:fontFamily="@font/din_font"
+        android:paddingBottom="12dp"/>
 
     <View
         android:layout_width="match_parent"
