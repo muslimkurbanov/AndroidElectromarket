@@ -1,7 +1,10 @@
 package screen.learninfo
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.widget.MediaController
+import android.widget.VideoView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.firebaseauthexample.R
 import com.google.firebase.auth.FirebaseAuth
@@ -60,15 +63,15 @@ class LearnInfoActivity : AppCompatActivity() {
                 val videoUrl = dataSnapshot.child("TestsVideo").getValue(String::class.java)
                 videoUrlSting = videoUrl.toString()
 
-//                val videoView = findViewById<VideoView>(R.id.videoViewLearnInfoScreen)
-//                val mediaController = MediaController(this@LearnInfoActivity)
-//                mediaController.setAnchorView(videoViewLearnInfoScreen)
-//                videoViewLearnInfoScreen.setMediaController(mediaController)
-//
-////        videoView.setVideoURI(Uri.parse(video))
-//                videoViewLearnInfoScreen.setVideoURI(Uri.parse(videoUrlSting))
-//                videoViewLearnInfoScreen.requestFocus()
-//                videoViewLearnInfoScreen.start()
+                val videoView = findViewById<VideoView>(R.id.videoViewLearnInfoScreen)
+                val mediaController = MediaController(this@LearnInfoActivity)
+                mediaController.setAnchorView(videoViewLearnInfoScreen)
+                videoViewLearnInfoScreen.setMediaController(mediaController)
+
+//        videoView.setVideoURI(Uri.parse(video))
+                videoViewLearnInfoScreen.setVideoURI(Uri.parse(videoUrlSting))
+                videoViewLearnInfoScreen.requestFocus()
+                videoViewLearnInfoScreen.start()
             }
         }
         reference.addValueEventListener(getData)

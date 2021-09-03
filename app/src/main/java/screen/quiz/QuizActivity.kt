@@ -128,17 +128,19 @@ class QuizActivity : AppCompatActivity() {
     private fun initListeners() {
 
         finishButton.setOnClickListener {
+            val testName = intent.getStringExtra(TEST_NAME)
+
             val intentNice = Intent(this, TestActivity::class.java)
             startActivity(intentNice)
+            testResults.add(score)
 
-            val map: HashMap<String, Any> = hashMapOf(
-                "Имя" to inputNameEditTextRegistrationAct.text.toString(),
-                "Фамилия" to inputSernameEditTextRegistrationAct.text.toString(),
-                "Номер телефона" to inputUserNumberRegistrationAct.text.toString()
-            )
-            reference.setValue(map)
-            val intentToTestFrag = Intent(this, TestActivity::class.java)
-            startActivity(intentToTestFrag)
+
+
+//            val map: HashMap<String, Any> = hashMapOf(
+//                testName!! to testResults
+//            )
+            ref.child(testName!!).setValue(testResults)
+
 
         }
 
