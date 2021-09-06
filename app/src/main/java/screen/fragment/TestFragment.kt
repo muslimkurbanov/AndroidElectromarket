@@ -87,6 +87,7 @@ class TestFragment : Fragment(), TestView, TestAdapter.OnItemClickListener {
                 val testAdapter = TestAdapter(fieldList, imageList, childList, this@TestFragment)
                 recyclerViewTestAct.adapter = testAdapter
 
+                progressBar.visibility = View.INVISIBLE
             }
 
             override fun onCancelled(databaseError: DatabaseError) {

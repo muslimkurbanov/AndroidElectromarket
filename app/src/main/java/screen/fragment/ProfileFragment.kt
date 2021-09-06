@@ -21,6 +21,7 @@ import kotlinx.android.synthetic.main.fragment_profile.*
 import kotlinx.android.synthetic.main.fragment_test.*
 import screen.login.ui.MainActivity
 import screen.test.ui.TestAdapter
+import kotlinx.android.synthetic.main.fragment_test.progressBar as progressBar1
 
 class ProfileFragment : Fragment() {
 
@@ -75,6 +76,8 @@ class ProfileFragment : Fragment() {
 
                 val testAdapter = ProfileAdapter(test)
                 recyclerViewHome.adapter = testAdapter
+                progressBar.visibility = View.INVISIBLE
+
             }
 
             override fun onCancelled(databaseError: DatabaseError) {
@@ -83,7 +86,6 @@ class ProfileFragment : Fragment() {
         }
 
         ref.addListenerForSingleValueEvent(postListener)
-
     }
     private fun initLogOut() {
 
@@ -104,7 +106,6 @@ class ProfileFragment : Fragment() {
                         logoutButton.setOnClickListener {
 
                             alertDialog.show()
-
                         }
                     }
         }

@@ -3,6 +3,7 @@ package screen.login.ui
 import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.firebaseauthexample.R
@@ -56,6 +57,8 @@ class MainActivity : AppCompatActivity() {
 
     // Метод создания нового пользователя (регистрация)
     private fun createUser(email: String, password: String) {
+        progressBar.visibility = View.VISIBLE
+
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener { task ->
 
@@ -77,6 +80,7 @@ class MainActivity : AppCompatActivity() {
 
     // Метод входа уже реганного пользователя (войти)
     private fun loginUser(email: String, password: String) {
+        progressBar.visibility = View.VISIBLE
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener { task ->
 
@@ -96,6 +100,7 @@ class MainActivity : AppCompatActivity() {
         val currentUser = auth.currentUser
         if(currentUser != null){
             val intent = Intent(this, TestActivity::class.java)
+
             startActivity(intent)
         }
     }
