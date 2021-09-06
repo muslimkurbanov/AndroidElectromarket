@@ -100,7 +100,6 @@ class MainActivity : AppCompatActivity() {
         val currentUser = auth.currentUser
         if(currentUser != null){
             val intent = Intent(this, TestActivity::class.java)
-
             startActivity(intent)
         }
     }

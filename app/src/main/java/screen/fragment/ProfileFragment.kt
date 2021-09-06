@@ -10,6 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.MediaController
+import android.widget.Toast
 import android.widget.VideoView
 import androidx.fragment.app.Fragment
 import com.example.firebaseauthexample.R
@@ -53,6 +54,7 @@ class ProfileFragment : Fragment() {
             .child(auth.currentUser.uid)
             .child("Tests")
             .child("TestsInformation")
+
         getUserScore()
     }
 
@@ -74,10 +76,14 @@ class ProfileFragment : Fragment() {
                     test[it.key.orEmpty()] = it.value as List<Int>
                 }
 
+                if (test.size == 0) {
+                    noCompletedTestsTextView.visibility = View.VISIBLE
+                }
+
                 val testAdapter = ProfileAdapter(test)
                 recyclerViewHome.adapter = testAdapter
-                progressBar.visibility = View.INVISIBLE
 
+                progressBar.visibility = View.INVISIBLE
             }
 
             override fun onCancelled(databaseError: DatabaseError) {

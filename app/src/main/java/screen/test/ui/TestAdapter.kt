@@ -29,6 +29,7 @@ class TestAdapter(
     }
 
     override fun onBindViewHolder(holder: TestViewHolder, position: Int) {
+
         holder.titleTextView?.text = fieldTestList[position]
         holder.initialaze(listener)
         val path = imageTestList[position]

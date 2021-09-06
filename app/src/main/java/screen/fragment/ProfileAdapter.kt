@@ -11,7 +11,7 @@ import java.util.*
 import kotlin.collections.HashMap
 
 class ProfileAdapter(
-    private val test: HashMap<String, List<Int>>
+    val test: HashMap<String, List<Int>>
 ) : RecyclerView.Adapter<ProfileAdapter.ProfileViewHolder>() {
 
     private var selectedPosition = -1
