@@ -29,11 +29,7 @@ class ProfileFragment : Fragment() {
     private lateinit var ref: DatabaseReference
     private lateinit var newRef: DatabaseReference
 
-    private var arr = arrayListOf<Int>(1,4,3)
-
-    private var firKeys = arrayListOf<String>()
     private var test: HashMap<String, List<Int>> = HashMap()
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -57,10 +53,10 @@ class ProfileFragment : Fragment() {
             .child("Tests")
             .child("TestsInformation")
         getUserScore()
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
         initLogOut()
         logoutButton.visibility = View.VISIBLE
         iconHelp.visibility = View.INVISIBLE

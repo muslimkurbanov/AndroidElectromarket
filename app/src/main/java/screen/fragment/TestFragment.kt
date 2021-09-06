@@ -50,7 +50,6 @@ class TestFragment : Fragment(), TestView, TestAdapter.OnItemClickListener {
             .child("TestsInformation")
 
         loadDataFromFB()
-
     }
     // Загрузка названий тестов
     private fun loadDataFromFB() {
@@ -92,6 +91,7 @@ class TestFragment : Fragment(), TestView, TestAdapter.OnItemClickListener {
 
             override fun onCancelled(databaseError: DatabaseError) {
                 // Getting Post failed, log a message
+
                 Log.d("err", "${databaseError.details} - ${databaseError.message}")
             }
         }

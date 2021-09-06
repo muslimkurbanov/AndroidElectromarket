@@ -23,11 +23,11 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
         auth = FirebaseAuth.getInstance()
         reference = FirebaseDatabase.getInstance().getReference("users")
 
+        setContentView(R.layout.activity_main)
 
         // Кнопка регистрации
         registrationBtnMainAct.setOnClickListener {
