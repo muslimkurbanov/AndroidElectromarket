@@ -38,14 +38,15 @@
         android:layout_width="wrap_content"
         android:layout_height="37dp"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentRight="false"
         android:layout_marginTop="9dp"
         android:layout_marginEnd="5dp"
         android:layout_marginRight="14dp"
         android:background="#00FFFFFF"
+        android:fontFamily="sans-serif-medium"
         android:text="Выйти"
-        android:visibility="invisible"
-        app:backgroundTint="#00FFFFFF"
-        app:iconTint="#00FFFFFF" />
+        android:textSize="16dp"
+        android:gravity="center"
+        android:textAllCaps="false" android:visibility="invisible" app:backgroundTint="#00FFFFFF"/>
 
 </RelativeLayout>
